@@ -1,71 +1,192 @@
-[# Getting Started with Create React App
+# IHS Shared Modules & Utility Pages
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A collection of reusable frontend modules and utility pages developed for IHS applications and platforms.
 
-## Available Scripts
+This repository contains shared components, standalone pages, and reusable business modules that are integrated across multiple web and mobile applications within the IHS ecosystem.
 
-In the project directory, you can run:
+---
 
-### `npm start`
+## Overview
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+The project serves as a centralized collection of common functionalities and utility pages used in various IHS products to improve reusability, consistency, and development efficiency.
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+The repository includes barcode scanning features, payment status handling, policy pages, location services, and account management utilities.
 
-### `npm test`
+---
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+## Included Pages & Modules
 
-### `npm run build`
+### Barcode Scanner
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+A reusable barcode scanning module used across multiple applications for reading and processing barcode data.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+Route:
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+```bash
+/scanBarcode
+```
 
-### `npm run eject`
+---
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+### Payment Status
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+A page for displaying payment transaction results and status updates.
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+Route:
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+```bash
+/paymentStatus
+```
 
-## Learn More
+---
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+### Terms & Conditions
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+A static terms and conditions page used within customer-facing applications.
 
-### Code Splitting
+Route:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+```bash
+/terms
+```
 
-### Analyzing the Bundle Size
+---
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+### Location Map
 
-### Making a Progressive Web App
+A map display page for showing locations and coordinates interactively.
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+Route:
 
-### Advanced Configuration
+```bash
+/displayMap
+```
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+---
 
-### Deployment
+### Account Deletion
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+A user account deletion request page designed to comply with mobile application policies and privacy requirements.
 
-### `npm run build` fails to minify
+Route:
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-](https://github.com/AhmedAshraf-Dev/barcode-secanner)
+```bash
+/account-deletion
+```
+
+---
+
+### Refund Policy
+
+A refund policy page explaining payment and refund terms for customers.
+
+Route:
+
+```bash
+/refund-policy
+```
+
+---
+
+### Coming Soon
+
+A placeholder page used for under-development or unavailable routes.
+
+Routes:
+
+```bash
+/
+*
+```
+
+---
+
+## Technologies Used
+
+- React.js
+- JavaScript (ES6+)
+- React Router DOM
+- Tailwind CSS / CSS
+- Barcode Scanner Libraries
+- Maps Integration APIs
+
+---
+
+## Project Goals
+
+This repository focuses on:
+
+- Reusable Module Development
+- Shared Frontend Architecture
+- Cross-Application Integration
+- Clean UI/UX Design
+- Scalable Component Structure
+- Centralized Utility Management
+
+---
+
+## Architecture Highlights
+
+- Modular page structure
+- Reusable shared components
+- Lightweight routing system
+- Mobile-friendly responsive design
+- Easy integration across multiple projects
+
+---
+
+## Project Structure
+
+```bash
+src/
+├── components/
+├── pages/
+├── routes/
+├── utils/
+├── services/
+├── assets/
+└── App.js
+```
+
+---
+
+## Run Locally
+
+```bash
+git clone https://github.com/AhmedAshraf-Dev/barcode-secanner.git
+
+cd barcode-secanner
+
+npm install
+
+npm start
+```
+
+---
+
+## Use Cases
+
+These modules are integrated into multiple IHS web and mobile applications to provide:
+
+- Barcode processing
+- Payment flow support
+- Legal and policy pages
+- Map visualization
+- User account management
+
+---
+
+## Future Improvements
+
+- QR Code Support
+- Real-Time Barcode Validation
+- Enhanced Map Features
+- Multi-language Support
+- Advanced Payment Tracking
+- UI/UX Improvements
+
+---
+
+## Author
+
+Frontend Developer focused on building scalable reusable modules and enterprise frontend solutions.
