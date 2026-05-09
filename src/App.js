@@ -6,6 +6,7 @@ import PaymentStatus from "./components/PaymentStatus";
 import RefundPolicy from "./components/RefundPolicy";
 import Terms from "./components/Terms";
 import LocationMap from "./components/LocationMap";
+import PartnerSection from "./components/PartnerSection";
 
 function App() {
   return (
@@ -19,6 +20,7 @@ function App() {
       />
       <Route path="*" element={<ComingSoon />} />
       <Route path="/" element={<ComingSoon />} />
+      <Route path="/:projectName/:brandName" element={<PartnerSection />} />
       <Route path="/paymentStatus" element={<PaymentStatus />} />
       <Route path="/terms" element={<Terms />} />
       <Route path="/displayMap" element={<LocationMap />} />
